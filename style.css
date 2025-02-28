@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;   
+    background-color: #aa8f66; 
+}
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem; //text ko vertically center m lane k liye
+}
+@media only screen and (max-width: 600px){
+    .container{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.choice{
+    background-color: #766153;
+    height: 270px;
+    width: 270px;
+    font-size: 170px;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px solid #081b31;
+}
+.choice:active{
+    opacity: 80%;
+}
+.choice:hover{
+    border: 3px solid black;
+}
+.scoreboard{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 60px;
+}
+.score{
+    font-size: 1.5rem;
+}
+#user-score, #comp-score{
+    font-size: 2.5rem;
+}
+.msg-container{
+    font-size: 2rem;
+    background-color: #081b31;
+    color: white;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
